@@ -14,7 +14,7 @@ var WebpackCleanupPlugin = require('webpack-cleanup-plugin');
 module.exports = {
   context: sourcePath,
   entry: {
-    app: './main.tsx'
+    app: './mainCube.tsx'
   },
   output: {
     path: outPath,
@@ -108,7 +108,7 @@ module.exports = {
       disable: !isProduction
     }),
     new HtmlWebpackPlugin({
-      template: 'assets/index.html'
+      template: 'assets/indexCube.html'
     })
   ],
   devServer: {
